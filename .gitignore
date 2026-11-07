@@ -1,0 +1,50 @@
+# ── 本机配置（含真实地址/端口/会话 id，不进仓库）────────────────
+server/config.json
+server/messages.json
+
+# ── Flutter / Dart ────────────────────────────────────────────
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ── Android ──────────────────────────────────────────────────
+app/android/local.properties
+app/android/.gradle/
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/android/key.properties
+*.jks
+*.keystore
+
+# ── 各平台构建产物与生成配置 ──────────────────────────────────
+app/linux/flutter/ephemeral/
+app/windows/flutter/ephemeral/
+app/macos/Flutter/ephemeral/
+app/ios/Flutter/ephemeral/
+app/ios/Pods/
+app/macos/Pods/
+
+# ── IDE / 编辑器 ─────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# ── 系统 / 临时 ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── Python（服务端）──────────────────────────────────────────
+server/__pycache__/
+server/.venv/

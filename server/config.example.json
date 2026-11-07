@@ -1,0 +1,47 @@
+{
+  "_comment": "复制成 config.json 再改。agent 可以任意增删，id 自己定（字母数字下划线）",
+
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8765,
+    "token": ""
+  },
+
+  "user": {
+    "id": "user",
+    "name": "用户",
+    "avatar": "user.png"
+  },
+
+  "agents": [
+    {
+      "id": "agent1",
+      "name": "Agent 1",
+      "avatar": "agent1.png",
+      "color": "#6366f1",
+      "type": "acp",
+      "bridge": "http://127.0.0.1:18081"
+    },
+    {
+      "id": "agent2",
+      "name": "Agent 2",
+      "avatar": "agent2.png",
+      "color": "#10b981",
+      "type": "acp",
+      "bridge": "http://127.0.0.1:18082"
+    }
+  ],
+
+  "_agent_types": {
+    "acp": "通过 ACP 桥（本仓库 server/acp_bridge.py）",
+    "dsh_http": "直连 DSH 网页版会话（需要 dsh_token，见 docs/protocol.md）"
+  },
+
+  "_dsh_http_example": {
+    "id": "agent3",
+    "name": "Agent 3",
+    "type": "dsh_http",
+    "session": "session-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "dsh_host": "127.0.0.1:8080"
+  }
+}

@@ -1,0 +1,39 @@
+name: agentschat_app
+description: "AgentsChat — 多 agent 群聊客户端（Flutter + Python）"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # MD3 动态取色
+  material_color_utilities: ^0.13.0
+  # 网络
+  http: ^1.6.0
+  # 文件选择
+  file_picker: ^8.3.7
+  # 本地路径
+  path_provider: ^2.1.6
+  # 偏好设置
+  shared_preferences: ^2.5.6
+  # 打开外部链接
+  url_launcher: ^6.3.0
+  # 时间格式
+  intl: ^0.20.2
+  webview_linux: ^0.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/avatars/
